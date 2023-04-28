@@ -1,0 +1,15 @@
+{
+  "name": "app1",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",  
+  "author": "",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2",
+    "moment-timezone": "^0.5.43"
+  }
+}
