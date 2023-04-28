@@ -1,5 +1,8 @@
 # Dependencias instaladas por npm
 /node_modules
+app1/node_modules
+app2/node_modules
+
 
 # Directorios y archivos generados por herramientas de desarrollo
 /.cache
