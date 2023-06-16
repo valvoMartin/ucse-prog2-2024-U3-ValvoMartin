@@ -47,9 +47,9 @@ app.get("/checker", async (req, res) => {
       dataTimeParsed.isAfter(argentinaDateMorning) &&
       dataTimeParsed.isBefore(argentinaDateEvening)
     ) {
-      resp = `The Time received is between ${fromHs}hs and ${toHs}hs ${timezone}: ${dataTimeParsed}`;
+      resp = `WORKING TIME: The Time received is between ${fromHs}hs and ${toHs}hs ${timezone}: ${dataTimeParsed}`;
     } else {
-      resp = `The Time received is NOT between ${fromHs}hs and ${toHs}hs ${timezone}: ${dataTimeParsed}`;
+      resp = `FREE TIME: The Time received is NOT between ${fromHs}hs and ${toHs}hs ${timezone}: ${dataTimeParsed}`;
     }
 
     return res.json({ resp });
