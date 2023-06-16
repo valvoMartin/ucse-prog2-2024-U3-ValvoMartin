@@ -15,13 +15,14 @@ const port = 4001;
 app.get("/checker", async (req, res) => {
   try {
     const timezone = req?.query?.zone;
+    const url = req?.query?.url;
     console.log(`Timezone for: ${timezone}`);
 
     if (!timezone)
       return res.json({ resp: "No timezone specified in the request" });
 
     const response = await axios.get(
-      `http://localhost:4000/tz?zone=${timezone}`
+      `http://${url}:4000/tz?zone=${timezone}`
     );
 
     console.log(`API call ${JSON.stringify(response.data)}`);
