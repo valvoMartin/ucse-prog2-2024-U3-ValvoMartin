@@ -34,9 +34,9 @@ app.get("/checker", async (req, res) => {
     let resp = null;
     const dataTimeParsed = moment(data.time);
 
-    const fromHs = 8;
+    const fromHs = 9;
     const toHs = 18;
-    // Seteando el tiempo a 8hs y 18hs
+    // Seteando el tiempo a 9hs y 18hs
     argentinaDateMorning = moment.tz(timezone);
     argentinaDateMorning.hours(fromHs).minutes(0).seconds(0);
     argentinaDateEvening = moment.tz(timezone);
