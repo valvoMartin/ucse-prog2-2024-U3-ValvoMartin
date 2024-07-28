@@ -7,9 +7,9 @@
 ### App1
 http://localhost:4000/tz?zone=America/Argentina/Santa-Fe
 <br>
-![image]()
+
 
 ### App2
 http://localhost:4001/checker?url=app1&zone=America/Argentina/Santa-Fe
 <br>
-![image]()
+
