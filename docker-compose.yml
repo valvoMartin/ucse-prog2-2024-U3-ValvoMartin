@@ -1,0 +1,14 @@
+version: '3'
+
+services:
+  app1:
+    image: app1-nodejs-image
+    ports:
+      - "4000:4000"
+
+  app2:
+    image: app2-nodejs-image
+    ports:
+      - "4001:4001"
+    depends_on:
+      - app1
